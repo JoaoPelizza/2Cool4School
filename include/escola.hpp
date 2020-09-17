@@ -1,0 +1,6 @@
+#include "coordenador.hpp"
+#include "professor.hpp"
+#include "aluno.hpp"
+#include "materia.hpp"
+#include "prova.hpp"
+#include "turma.hpp"
