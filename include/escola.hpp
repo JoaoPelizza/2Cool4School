@@ -4,3 +4,5 @@
 #include "materia.hpp"
 #include "prova.hpp"
 #include "turma.hpp"
+#include "t_turma.hpp"
+#include "t_professor.hpp"

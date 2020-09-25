@@ -21,10 +21,11 @@ class Professor: public Pessoa{
         void add_to_Turma(Turma *turma);
         void add_turma_to_list(Turma *turma);
         void remove_turma_from_list(Turma *turma);
-        std::list<Turma> get_listTurma();
+        std::list<Turma*> get_listTurma();
+        std::list<Turma*> listTurma;
     private:
         std::string endereco;
-        std::list<Turma> listTurma;
+        
 };
 
 

@@ -31,3 +31,7 @@ bool Materia::checkIfCodeExists(std::string code){
     }
     return true;
 }
+
+std::string Materia::get_nome(){
+    return this->nome;
+}

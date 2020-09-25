@@ -1,0 +1,20 @@
+Nesta terceira e última fase do projeto você deverá se dedicar a atividades de implementação e testes.
+O objetivo não é completar toda a implementação do sistema, e sim concluir e testar a porção do sistema de acordo
+com o cronograma do seu projeto dentro do término desta disciplina. Portanto, durante as duas próximas semanas
+foque nestas atividades de forma a entregar as funcionalidades selecionadas plenamente desenvolvidas e devidamente
+testadas via testes unitários. Você deverá entregar os seguintes artefatos:
+
+1) Código-fonte desenvolvido - recomenda-se colocar em um projeto aberto no GitHub.
+Neste caso, bastará informar a URL do projeto.
+
+2) Testes unitários: diante do código desenvolvido selecione pontos críticos para desenvolver seus testes.
+Se utilizar o GitHub, os testes unitários também poderão ser colocados no projeto.
+
+Observações:
+
+- Vc poderá utilizar qualquer linguagem ou plataforma de desenvolvimento.
+Caso deseja suporte à linguagem Java e GUI Swing, a professora poderá sanar eventuais dúvidas.
+
+- Não será exigido o desenvolvimento do banco de dados.
+Você poderá desenvolver baseado em valores de variáveis que serão mantidas apenas durante a execução do sistema,
+ou ainda algum arquivo temporário. 

@@ -16,13 +16,13 @@ std::string Professor::get_endereco(){
 
 void Professor::remove_from_turma(Turma *turma){
     for(auto it = this->listTurma.begin(); it != this->listTurma.end();it++){
-        if((*it).get_nome() == (*turma).get_nome()){
-            (*it).remove_professor();
+        if((*it)->get_nome() == (*turma).get_nome()){
+            (*it)->remove_professor();
         }
     }
 }
 
-std::list<Turma> Professor::get_listTurma(){
+std::list<Turma*> Professor::get_listTurma(){
     return this->listTurma;
 }
 
@@ -31,24 +31,13 @@ void Professor::add_prova_to_turma(Turma *turma){
 }
 
 void Professor::add_to_Turma(Turma *turma){
-    turma->set_professor(this);
-    this->add_turma_to_list(turma);
+    this->listTurma.push_back(turma);
 }
 
-void Professor::add_turma_to_list(Turma *turma){
-    for(auto it = this->listTurma.begin(); it !=this->listTurma.end(); it++){
-        if((*it).get_nome() == (*turma).get_nome()){
-            std::cout << "Esse professor ja esta relacionado a essa turma\n";
-            return;
-        }
-    }
-    this->listTurma.push_back(*turma);
-    std::cout << "Turma adicionada a professor \n";
-}
 
 void Professor::remove_turma_from_list(Turma *turma){
     for(auto it = this->listTurma.begin(); it !=this->listTurma.end(); it++){
-        if((*it).get_nome() == (*turma).get_nome()){
+        if((*it)->get_nome() == (*turma).get_nome()){
             this->listTurma.erase(it);
             std::cout << "Turma remove da lista do professor\n";
             return;

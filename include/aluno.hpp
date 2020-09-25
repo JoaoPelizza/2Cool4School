@@ -32,7 +32,8 @@ class Aluno: public Pessoa{
         std::string num_responsavel;
         int serie;
         std::string nascimento;
-        std::list<Turma> listTurma;
+        std::list<Turma*> listTurma;
+
 };
 
 
